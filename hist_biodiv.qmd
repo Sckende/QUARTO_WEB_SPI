@@ -2,4 +2,4 @@
 title: "Histoire de biodiversité"
 ---
 
-Ceci est la page pour raconter une histoire de biodiversit2.
+Ceci est la page pour raconter une histoire de biodiversité.

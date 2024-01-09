@@ -1,5 +1,9 @@
+---
+title: "Visualisation"
+---
+
 ```{r RANGES_init, include = F}
-# packages
+# packages & data
 library(knitr)
 source("scr/RANGES_data_n_figures_visual.r")
 
@@ -12,21 +16,6 @@ last_spi_occ$SPI2 <- round(last_spi_occ$SPI, digits = 3)
 
 # colors
 col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
-
-
-# Output figure in HTML5
-# if (knitr::is_html_output()) {
-#     knitr::knit_hooks$set(
-#         plot = function(x, options) {
-#             cap <- options$fig.cap # figure caption
-#             tags <- htmltools::tags
-#             as.character(tags$figure(
-#                 tags$img(src = x, alt = cap),
-#                 tags$figcaption(cap)
-#             ))
-#         }
-#     )
-# }
 ```
 
 # Points clés

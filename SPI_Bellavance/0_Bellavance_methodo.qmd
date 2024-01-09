@@ -1,3 +1,7 @@
+---
+title: "Méthodologie"
+---
+
 # Computation of the SPI indicator for the 1992-2017 period
 
 The SPI biodiversity indicator measures the protected species habitat. It is computed as the ratio of the protected species habitat area to the total area of the species habitat. 

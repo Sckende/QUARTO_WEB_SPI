@@ -1,5 +1,5 @@
 ---
-title: "Résultats occurrences"
+title: "Exploration"
 ---
 
 ## SPI par groupe

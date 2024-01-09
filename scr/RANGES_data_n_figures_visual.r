@@ -37,7 +37,7 @@ vline <- function(x = 0, color = "#238A8DFF") {
 # ------------------------------------------ #
 #### figure 1 - carte des aires protégées ####
 # ------------------------------------------ #
-aires <- st_read("data_clean/aires_protegees_simplifiees.gpkg")
+aires <- st_read("./data_clean/aires_protegees_simplifiees.gpkg")
 
 # conversion en lat lon pour visualisation dans leaflet
 aires_latlon <- st_transform(
@@ -55,7 +55,7 @@ aires_latlon$POPINFOS <- paste0(
 #### figure 2A - courbes de tendance de SPI à partir aire distribution ####
 # --------------------------------------------------------------------- #
 
-SPI <- read.csv("results/RANGES/SPI.csv")
+SPI <- read.csv("./results/RANGES/SPI.csv")
 # error in species names
 SPI$SPECIES[SPI$SPECIES == "Lyn rufus"] <- "Lynx rufus"
 species <- as.character(unique(SPI$SPECIES))
@@ -72,7 +72,7 @@ years <- as.numeric(unique(SPI$YEAR))
 
 # info_spe2 <- do.call("rbind", infos)
 # write.csv(info_spe2, "data_clean/ATLAS_info_spe_distri.csv")
-info_spe2 <- read.csv("data_clean/ATLAS_info_spe_distri.csv")[, -1]
+info_spe2 <- read.csv("./data_clean/ATLAS_info_spe_distri.csv")[, -1]
 # adding species info from Atlas (et al) with a left_join
 SPI <- left_join(SPI, info_spe2, by = join_by("SPECIES" == "observed_scientific_name"))
 
@@ -132,7 +132,7 @@ sspi_df$GROUPE[is.na(sspi_df$GROUPE)] <- "other"
 #### figure 2B - courbes de tendance de SPI à partir aire distribution ####
 # --------------------------------------------------------------------- #
 
-SOCC <- read.csv("results/RANGES/SPI_OCC.csv")
+SOCC <- read.csv("./results/RANGES/SPI_OCC.csv")
 SOCC <- SOCC[!(SOCC$SPECIES == "Information masquée"), ]
 species <- as.character(unique(SOCC$SPECIES))
 years <- as.numeric(unique(SOCC$YEAR))
@@ -188,7 +188,7 @@ sspi_df_occ$GROUPE[is.na(sspi_df_occ$GROUPE)] <- "other"
 # --------------------------------------------------------- #
 #### figure46 - barchat SPI 2023 par groupe Nord vs Sud ####
 # ------------------------------------------------------- #
-last_spi_NS <- read.csv2("data_clean/RANGE_SPI_north_south.csv")[, -1]
+last_spi_NS <- read.csv2("./data_clean/RANGE_SPI_north_south.csv")[, -1]
 last_spi_NS <- left_join(last_spi_NS, info_spe2, by = join_by("SPECIES" == "observed_scientific_name"))
 # ---------------------------------------------------------- #
 #### figure 6 - barchat SPI 2023 par groupe taxonomique ####
