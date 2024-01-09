@@ -25,7 +25,7 @@ website:
         file: about.qmd
   sidebar:
     - title: "Home"
-      style: docked # floating
+      style: docked #floating
       background: light
       contents:
         - index.qmd
@@ -41,7 +41,7 @@ website:
           contents:
             - SPI_occurrences/0_Occurrences_methodo.qmd
             - SPI_occurrences/1_Occurrences_SPI_explo.qmd
-            - SPI_occurrences/2_Occurrences_SPI_visual.qmd
+            - 2_Occurrences_SPI_visual.qmd
 
         - section: "Aires de distribution"
           contents:

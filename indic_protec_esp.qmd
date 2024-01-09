@@ -1,3 +1,103 @@
 ---
 title: Indice de protection des espèces
 ---
+
+```{r indic_protec_INIT, include = F}
+# packages & data
+library(knitr)
+source("scr/RANGES_data_n_figures_visual.r")
+
+# colors
+col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
+```
+
+## **Représentation actuelle des aires protégées du Québec**
+
+Superficie totale protégée = 28 060 703 ha
+
+```{r protected_areas_map, echo=F}
+#| label: fig-aires_prot
+#| fig-cap: "Carte des aires protégées actuelles."
+#| warning: false
+# aires_latlon$year <- as.factor(aires_latlon$year)
+# mapview(aires,
+#         # col.regions = "#238A8DFF",
+#         popup = T,
+#         legend = F,
+#         zcol = "year"
+#         # , burst = T
+#         )
+# col_pal <- viridis(4, direction = -1)
+m <- leaflet(aires_latlon) |>
+    addTiles() |>
+    addPolygons(
+        data = aires_latlon[aires_latlon$year < 1900, ],
+        color = col_pal[1],
+        weight = 1,
+        smoothFactor = 0.5,
+        opacity = 1.0,
+        fillOpacity = 0.5,
+        group = "Antérieure à 1900",
+        highlightOptions = highlightOptions(
+            color = "white",
+            weight = 2,
+            bringToFront = TRUE
+        ),
+        popup = aires_latlon$POPINFOS[aires_latlon$year < 1900]
+    ) |>
+    addPolygons(
+        data = aires_latlon[aires_latlon$year >= 1900 & aires_latlon$year < 1950, ],
+        color = col_pal[4],
+        weight = 1,
+        smoothFactor = 0.5,
+        opacity = 1.0,
+        fillOpacity = 0.5,
+        group = "Période 1900 - 1950",
+        highlightOptions = highlightOptions(
+            color = "white",
+            weight = 2,
+            bringToFront = TRUE
+        ),
+        popup = aires_latlon$POPINFOS[aires_latlon$year >= 1900 & aires_latlon$year < 1950]
+    ) |>
+    addPolygons(
+        data = aires_latlon[aires_latlon$year >= 1950 & aires_latlon$year < 2000, ],
+        color = col_pal[2],
+        weight = 1,
+        smoothFactor = 0.5,
+        opacity = 1.0,
+        fillOpacity = 0.5,
+        group = "Période 1950 - 2000",
+        highlightOptions = highlightOptions(
+            color = "white",
+            weight = 2,
+            bringToFront = TRUE
+        ),
+        popup = aires_latlon$POPINFOS[aires_latlon$year >= 1950 & aires_latlon$year < 2000]
+    ) |>
+    addPolygons(
+        data = aires_latlon[aires_latlon$year >= 2000, ],
+        color = col_pal[3],
+        weight = 1,
+        smoothFactor = 0.5,
+        opacity = 1.0,
+        fillOpacity = 0.5,
+        group = "Postérieure à 2000",
+        highlightOptions = highlightOptions(
+            color = "white",
+            weight = 2,
+            bringToFront = TRUE
+        ),
+        popup = aires_latlon$POPINFOS[aires_latlon$year >= 2000]
+    ) |>
+    addLayersControl(
+        overlayGroups = c(
+            "Antérieure à 1900",
+            "Période 1900 - 1950",
+            "Période 1950 - 2000",
+            "Postérieure à 2000"
+        ),
+        options = layersControlOptions(collapsed = FALSE)
+    )
+m
+```
