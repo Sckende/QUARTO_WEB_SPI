@@ -1,0 +1,84 @@
+project:
+  type: website
+
+website:
+  title: "SPI Québec"
+  image: assets/img/logo.png
+  navbar:
+    logo: assets/img/logo.png
+    logo-alt: "BdQc logo"
+    title: false
+    collapse-below: lg
+    tools:
+      - icon: github
+        href: https://github.com/Sckende/QUARTO_WEB_SPI
+        text: SPI GitHub 
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Histoire de biodiversité"
+        file: index.qmd
+      - text: "Indice de Protection des Espèces"
+        # file: 
+      - text: "À propos"
+        file: about.qmd
+  sidebar:
+    - title: "Indice de Protection des Espèces"
+    # style: "docked"
+    style: "floating"
+    search: true
+    contents:
+     - section: "Indice de Protection des espèces - SDM"
+        contents: 
+          - text: Méthodologie
+            href: SPI_Bellavance/0_Bellavance_methodo.qmd
+          - text: Résultats exploratoires
+            href: SPI_Bellavance/1_Bellavance_SPI_explo.qmd
+          - text: Visualisation
+            href: SPI_Bellavance/2_Bellavance_SPI_visual.qmd
+      - section: "Indice de Protection des espèces - occurrences"
+        contents: 
+          - text: Méthodologie
+            href: SPI_occurrences/0_Occurrences_methodo.qmd
+          - text: Résultats exploratoires
+            href: SPI_occurrences/1_Occurrences_SPI_explo.qmd
+          - text: Visualisation
+            href: SPI_occurrences/2_Occurrences_SPI_visual.qmd
+      - section: "Indice de Protection des espèces - aires de distribution"
+        contents: 
+          - text: Méthodologie
+            href: SPI_ranges/0_Ranges_methodo.qmd
+          - text: Résultats exploratoires
+            href: SPI_ranges/1_Ranges_SPI_explo.qmd
+          - text: Visualisation
+            href: SPI_ranges/2_Ranges_SPI_visual.qmd
+    # - id: "Histoire de biodiversité"
+    # - id: SPI
+      # collapse-level: 1
+      # contents:
+      #   - section: "SPI"
+      #     href: SPI.qmd
+      #     contents:
+      #       - section: "Aires de répartition"
+      #         href: results/section_ranges/description.md
+      #         contents:
+      #           - docs/results_ranges.qmd
+      #       - section: "Occurences"
+      #         href: results/section_occurences/description.md
+      #         contents:
+      #           - docs/results_occurences.qmd
+      #       - section: "Cartes de Vincent Bellavance"
+      #         href: results/section_bellavance/description.md
+      #         contents:
+      #           - docs/results_bellavance.qmd
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+
+
+

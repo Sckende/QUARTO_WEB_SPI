@@ -1,0 +1,3 @@
+# README
+
+Description de la méthodologie avec les occurrences

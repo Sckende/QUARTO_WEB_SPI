@@ -1,0 +1,18 @@
+---
+title: "Résultats occurrences"
+---
+
+## SPI par groupe
+
+![](../results/img/OCC_SPI_by_group.png)
+
+
+## Scores SPI
+
+![](../results/img/OCC_SPI_scores.png)
+
+## Scores SPI par régions
+
+![](../results/img/OCC_SPI_regions.png)
+
+

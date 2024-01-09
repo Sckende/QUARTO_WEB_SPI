@@ -1,0 +1,16 @@
+---
+title: "Résultats aires de distribution"
+---
+
+## SPI par groupe
+
+![](../results/section_ranges/SPI_by_group.png)
+
+
+## Scores SPI
+
+![](../results/section_ranges/SPI_scores.png)
+
+## Scores SPI par régions
+
+![](../results/section_ranges/SPI_regions.png)
