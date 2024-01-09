@@ -33,19 +33,19 @@ jobs:
       - name: Render Quarto Project
         run: QUARTO_DENO_EXTRA_OPTIONS="--v8-flags=--max-old-space-size=8192" quarto render
 
-      - name: prepare deployment
-        run: |
-          mkdir docs
-          mv _site docs/
-          if [ -d index_files ]; then
-            mv index_files docs/
-          fi
-          touch docs/.nojekyll
+      # - name: prepare deployment
+      #   run: |
+      #     mkdir docs
+      #     mv _site docs/
+      #     if [ -d index_files ]; then
+      #       mv index_files docs/
+      #     fi
+      #     touch docs/.nojekyll
 
       - name: Deploy gh_pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs
+          FOLDER: _site
           SINGLE_COMMIT: true
