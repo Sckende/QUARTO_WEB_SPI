@@ -56,15 +56,43 @@
     "text": "Description de la méthodologie avec les aires de distribution"
   },
   {
-    "objectID": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi",
-    "href": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "SPI_occurrences/0_Occurrences_methodo.html",
+    "href": "SPI_occurrences/0_Occurrences_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Description de la méthodologie avec les occurrences"
+  },
+  {
+    "objectID": "hist_biodiv.html",
+    "href": "hist_biodiv.html",
+    "title": "Histoire de biodiversité",
+    "section": "",
+    "text": "Ceci est la page pour raconter une histoire de biodiversité."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "QUARTO_WEB_SPI",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi",
+    "href": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi",
     "title": "Exploration",
     "section": "Scores SPI",
     "text": "Scores SPI"
   },
   {
-    "objectID": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi-par-régions",
-    "href": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "objectID": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "href": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi-par-régions",
     "title": "Exploration",
     "section": "Scores SPI par régions",
     "text": "Scores SPI par régions"
@@ -105,45 +133,17 @@
     "text": "Select types of protected areas to include in the analyses"
   },
   {
-    "objectID": "SPI_occurrences/0_Occurrences_methodo.html",
-    "href": "SPI_occurrences/0_Occurrences_methodo.html",
-    "title": "Méthodologie",
-    "section": "",
-    "text": "Description de la méthodologie avec les occurrences"
-  },
-  {
-    "objectID": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi",
-    "href": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi",
+    "objectID": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi",
+    "href": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi",
     "title": "Exploration",
     "section": "Scores SPI",
     "text": "Scores SPI"
   },
   {
-    "objectID": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi-par-régions",
-    "href": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "objectID": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "href": "SPI_ranges/1_Ranges_SPI_explo.html#scores-spi-par-régions",
     "title": "Exploration",
     "section": "Scores SPI par régions",
     "text": "Scores SPI par régions"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "QUARTO_WEB_SPI",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "hist_biodiv.html",
-    "href": "hist_biodiv.html",
-    "title": "Histoire de biodiversité",
-    "section": "",
-    "text": "Ceci est la page pour raconter une histoire de biodiversité."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
