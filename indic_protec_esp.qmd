@@ -2,6 +2,11 @@
 title: Indice de protection des espèces
 ---
 
+# Définition et méthodologie
+
+L'indice de protection des espèces est un indicateur de biodiversité qui vise à mesurer le niveau de protection de l'habitat des espèces. Il peut être calculer à l'échelle spécifique et global. Il correspond au ratio entre la superficie de l'habitat inclut dans une aire protégée et la superficie totale de l'habitat d'une espèce.  
+**Ajouter refs**
+
 ```{r indic_protec_INIT, include = F}
 # packages & data
 library(knitr)
@@ -13,7 +18,7 @@ col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
 
 ## **Représentation actuelle des aires protégées du Québec**
 
-Superficie totale protégée = 28 060 703 ha
+En 2023, le Québec présente une superficie totale d'aire protégée équivalent à 28 060 703 ha, soit plus de 69 millions d'acres. Ces données sont fournies par le **Ministère de l'Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs** et sont en [accès libre](https://www.environnement.gouv.qc.ca/biodiversite/aires_protegees/registre/). Ici, seules les **aires protégées du registre**, sans distinction, ont été considérées (téléchargées le 31-08-2023). 
 
 ```{r protected_areas_map, echo=F}
 #| label: fig-aires_prot

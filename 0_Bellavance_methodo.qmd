@@ -1,0 +1,17 @@
+---
+title: "Méthodologie"
+---
+
+## Données
+
+### Aires protégées
+
+Ces données sont fournies par le **Ministère de l'Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs** et sont en [accès libre](https://www.environnement.gouv.qc.ca/biodiversite/aires_protegees/registre/). Ici, seules les **aires protégées du registre**, sans distinction, ont été considérées (téléchargées le 31-08-2023).  
+
+### Aires de distribution  
+
+Les aires de distribution pour les oiseaux nicheurs du Québec (n = xx) ont été produites par Vincent Bellavance dans le cadre de sa maîtrise (Ielab, Université de Sherbrooke). Pour chaque espèce, une carte de distribution a été établies annuellement de 1992 à 2018 (voir méthode plus précise - ref) à partir des données d'occurrences fournies par [Biodiversité Québec](https://biodiversite-quebec.ca/). 
+
+### Data treatment
+
+Les aires protégées du Québec présentent de nombreuses superposition. Afin de ne pas biaiser le calcul de l'indicateur, les aires protégées ont été fusionnées en utilisant la fonction `geos_unary_union` du package R `geos`.

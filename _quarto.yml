@@ -39,21 +39,21 @@ website:
         - indic_protec_esp.qmd
         - section: "Occurrences"
           contents:
-            - SPI_occurrences/0_Occurrences_methodo.qmd
-            - SPI_occurrences/1_Occurrences_SPI_explo.qmd
+            - 0_Occurrences_methodo.qmd
+            - 1_Occurrences_SPI_explo.qmd
             - 2_Occurrences_SPI_visual.qmd
 
         - section: "Aires de distribution"
           contents:
-            - SPI_ranges/0_Ranges_methodo.qmd
-            - SPI_ranges/1_Ranges_SPI_explo.qmd
+            - 0_Ranges_methodo.qmd
+            - 1_Ranges_SPI_explo.qmd
             - 2_Ranges_SPI_visual.qmd
 
         - section: "SDM - INLA"
           contents:
-            - SPI_Bellavance/0_Bellavance_methodo.qmd
-            - SPI_Bellavance/1_Bellavance_SPI_explo.qmd
-            - SPI_Bellavance/2_Bellavance_SPI_visual.qmd
+            - 0_Bellavance_methodo.qmd
+            - 1_Bellavance_SPI_explo.qmd
+            - 2_Bellavance_SPI_visual.qmd
 
     - title: "À propos"
       contents:

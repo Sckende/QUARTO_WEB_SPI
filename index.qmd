@@ -1,7 +1,5 @@
 ---
-title: "QUARTO_WEB_SPI"
+title: "Indicateurs de biodiversité"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Ceci est un epage pour les généralités autour des travaux présentés ici.
