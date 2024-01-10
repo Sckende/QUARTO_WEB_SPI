@@ -79,9 +79,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "QUARTO_WEB_SPI",
+    "title": "Indicateurs de biodiversité",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Ceci est un epage pour les généralités autour des travaux présentés ici."
   },
   {
     "objectID": "SPI_occurrences/1_Occurrences_SPI_explo.html#scores-spi",
@@ -151,14 +151,14 @@
     "href": "indic_protec_esp.html",
     "title": "Indice de protection des espèces",
     "section": "",
-    "text": "Superficie totale protégée = 28 060 703 ha\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles."
+    "text": "L’indice de protection des espèces est un indicateur de biodiversité qui vise à mesurer le niveau de protection de l’habitat des espèces. Il peut être calculer à l’échelle spécifique et global. Il correspond au ratio entre la superficie de l’habitat inclut dans une aire protégée et la superficie totale de l’habitat d’une espèce.\nAjouter refs\n\n\nEn 2023, le Québec présente une superficie totale d’aire protégée équivalent à 28 060 703 ha, soit plus de 69 millions d’acres. Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles."
   },
   {
     "objectID": "indic_protec_esp.html#représentation-actuelle-des-aires-protégées-du-québec",
     "href": "indic_protec_esp.html#représentation-actuelle-des-aires-protégées-du-québec",
     "title": "Indice de protection des espèces",
     "section": "",
-    "text": "Superficie totale protégée = 28 060 703 ha\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles."
+    "text": "En 2023, le Québec présente une superficie totale d’aire protégée équivalent à 28 060 703 ha, soit plus de 69 millions d’acres. Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles."
   },
   {
     "objectID": "2_Occurrences_SPI_visual.html",
@@ -180,5 +180,61 @@
     "title": "Visualisation",
     "section": "Valeurs des indices de protection des espèces en 2023",
     "text": "Valeurs des indices de protection des espèces en 2023\n\n\n\n\n\nFigure 2: Valeur de l’indicateur de protection des espèces en 2023, à partir des données d’occurrences (n = 503)."
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html#scores-spi",
+    "href": "1_Ranges_SPI_explo.html#scores-spi",
+    "title": "Exploration",
+    "section": "Scores SPI",
+    "text": "Scores SPI"
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "href": "1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "title": "Exploration",
+    "section": "Scores SPI par régions",
+    "text": "Scores SPI par régions"
+  },
+  {
+    "objectID": "0_Ranges_methodo.html",
+    "href": "0_Ranges_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Description de la méthodologie avec les aires de distribution"
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#scores-spi",
+    "href": "1_Occurrences_SPI_explo.html#scores-spi",
+    "title": "Exploration",
+    "section": "Scores SPI",
+    "text": "Scores SPI"
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "href": "1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "title": "Exploration",
+    "section": "Scores SPI par régions",
+    "text": "Scores SPI par régions"
+  },
+  {
+    "objectID": "0_Occurrences_methodo.html",
+    "href": "0_Occurrences_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Description de la méthodologie avec les occurrences"
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html",
+    "href": "0_Bellavance_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\nLes aires de distribution pour les oiseaux nicheurs du Québec (n = xx) ont été produites par Vincent Bellavance dans le cadre de sa maîtrise (Ielab, Université de Sherbrooke). Pour chaque espèce, une carte de distribution a été établies annuellement de 1992 à 2018 (voir méthode plus précise - ref) à partir des données d’occurrences fournies par Biodiversité Québec.\n\n\n\nLes aires protégées du Québec présentent de nombreuses superposition. Afin de ne pas biaiser le calcul de l’indicateur, les aires protégées ont été fusionnées en utilisant la fonction geos_unary_union du package R geos."
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html#données",
+    "href": "0_Bellavance_methodo.html#données",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\nLes aires de distribution pour les oiseaux nicheurs du Québec (n = xx) ont été produites par Vincent Bellavance dans le cadre de sa maîtrise (Ielab, Université de Sherbrooke). Pour chaque espèce, une carte de distribution a été établies annuellement de 1992 à 2018 (voir méthode plus précise - ref) à partir des données d’occurrences fournies par Biodiversité Québec.\n\n\n\nLes aires protégées du Québec présentent de nombreuses superposition. Afin de ne pas biaiser le calcul de l’indicateur, les aires protégées ont été fusionnées en utilisant la fonction geos_unary_union du package R geos."
   }
 ]
