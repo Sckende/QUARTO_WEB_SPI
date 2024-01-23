@@ -1,51 +1,51 @@
-name: Build report
+# name: Build report
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  build_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
+# jobs:
+#   build_deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out repository
+#         uses: actions/checkout@v3
 
-      - name: Install quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
+#       - name: Install quarto
+#         uses: quarto-dev/quarto-actions/setup@v2
+#         with:
+#           tinytex: true
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: "4.1.2"
-          # use-public-rspm: true
+#       - name: Setup R
+#         uses: r-lib/actions/setup-r@v2
+#         with:
+#           r-version: "4.1.2"
+#           # use-public-rspm: true
 
-      - name: Install spatial dependencies
-        run: sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev netcdf-bin libharfbuzz-dev libfribidi-dev
+#       - name: Install spatial dependencies
+#         run: sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev netcdf-bin libharfbuzz-dev libfribidi-dev
 
-      - uses: r-lib/actions/setup-renv@v2
-        with:
-          cache-version: 1
+#       - uses: r-lib/actions/setup-renv@v2
+#         with:
+#           cache-version: 1
 
-      - name: Render Quarto Project
-        run: QUARTO_DENO_EXTRA_OPTIONS="--v8-flags=--max-old-space-size=8192" quarto render
+#       - name: Render Quarto Project
+#         run: QUARTO_DENO_EXTRA_OPTIONS="--v8-flags=--max-old-space-size=8192" quarto render
 
-      # - name: prepare deployment
-      #   run: |
-      #     mkdir docs
-      #     mv _site docs/
-      #     if [ -d index_files ]; then
-      #       mv index_files docs/
-      #     fi
-      #     touch docs/.nojekyll
+#       # - name: prepare deployment
+#       #   run: |
+#       #     mkdir docs
+#       #     mv _site docs/
+#       #     if [ -d index_files ]; then
+#       #       mv index_files docs/
+#       #     fi
+#       #     touch docs/.nojekyll
 
-      - name: Deploy gh_pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _site
-          SINGLE_COMMIT: true
+#       - name: Deploy gh_pages
+#         uses: JamesIves/github-pages-deploy-action@releases/v3
+#         with:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           BRANCH: gh-pages
+#           FOLDER: _site
+#           SINGLE_COMMIT: true
